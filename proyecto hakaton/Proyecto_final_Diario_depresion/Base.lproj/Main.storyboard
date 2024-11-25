@@ -342,30 +342,44 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="crisis anciedad" title=""/>
+                                <connections>
+                                    <segue destination="MMc-jB-Xxy" kind="presentation" id="8w5-pK-umO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pg6-jS-3Oe">
                                 <rect key="frame" x="84" y="322" width="224" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="suicidio" title=""/>
+                                <connections>
+                                    <segue destination="vvS-sf-yMN" kind="presentation" id="P8y-gE-hgp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nq0-qo-P1i">
                                 <rect key="frame" x="84" y="450" width="224" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="crisis hipertensiva" title=""/>
+                                <connections>
+                                    <segue destination="Ck3-TF-wl8" kind="presentation" id="HgU-zB-ZRR"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDB-Sq-3yS">
                                 <rect key="frame" x="84" y="579" width="224" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="crisis diabetica" title=""/>
+                                <connections>
+                                    <segue destination="jgo-Pr-H1y" kind="presentation" id="IKS-rC-rVM"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="IpX-qW-pQa"/>
                         <color key="backgroundColor" red="0.98823529480000005" green="0.97254902119999997" blue="0.84313726430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Emergencia" selectedImage="waveform.path.ecg.text.rtl" catalog="system" id="6Xw-Sf-Sej"/>
+                    <tabBarItem key="tabBarItem" title="Emergencia" selectedImage="waveform.path.ecg.text.rtl" catalog="system" id="6Xw-Sf-Sej">
+                        <imageReference key="image" image="waveform.path.ecg.text.rtl" catalog="system" symbolScale="default"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tap-vl-Wlr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -376,15 +390,37 @@
             <objects>
                 <viewController title="Crisis_ansiedad_view" id="MMc-jB-Xxy" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SQO-3e-x2p">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Crisis de ansiedad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ww0-yw-R5K">
+                                <rect key="frame" x="4" y="58" width="385" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="38"/>
+                                <color key="textColor" red="0.83631234219999995" green="0.50460702899999998" blue="0.44808243260000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxj-6i-XSh">
+                                <rect key="frame" x="52" y="745" width="288" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Llamar a servicios de emergencia">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="perrito_gato" translatesAutoresizingMaskIntoConstraints="NO" id="DjJ-q8-iL4">
+                                <rect key="frame" x="113" y="561" width="167" height="185"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="TAf-VS-FgF"/>
                         <color key="backgroundColor" red="0.98823529480000005" green="0.97254902119999997" blue="0.84313726430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GJA-ia-mQG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2187" y="-3231"/>
+            <point key="canvasLocation" x="2185.4961832061067" y="-3231.6901408450708"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="aSZ-Vf-d4G">
@@ -480,45 +516,111 @@
             <objects>
                 <viewController title="Intento_suicidio_view" id="vvS-sf-yMN" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ACK-JM-KMW">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Intento de suicidio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nLd-PI-24h">
+                                <rect key="frame" x="-8" y="71" width="385" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="38"/>
+                                <color key="textColor" red="0.83631234219999995" green="0.50460702899999998" blue="0.44808243260000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ln2-Iq-OlO">
+                                <rect key="frame" x="52" y="749" width="288" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Llamar a servicios de emergencia">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="panda" translatesAutoresizingMaskIntoConstraints="NO" id="LfH-ta-Apt">
+                                <rect key="frame" x="113" y="561" width="167" height="168"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="WSy-kd-ONt"/>
                         <color key="backgroundColor" red="0.98823529480000005" green="0.97254902119999997" blue="0.84313726430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FRa-Qm-ZeO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2185" y="-2568"/>
+            <point key="canvasLocation" x="2183.969465648855" y="-2568.3098591549297"/>
         </scene>
         <!--Crisis_Hipertrnsiva_view-->
         <scene sceneID="ia4-Nf-iHq">
             <objects>
                 <viewController title="Crisis_Hipertrnsiva_view" id="Ck3-TF-wl8" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8eE-Ye-rZ4">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Crisis hipertensiva" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNF-71-XRY">
+                                <rect key="frame" x="8" y="51" width="385" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="38"/>
+                                <color key="textColor" red="0.83631234219999995" green="0.50460702899999998" blue="0.44808243260000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRh-CL-DcD">
+                                <rect key="frame" x="56" y="751" width="288" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Llamar a servicios de emergencia">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="baumanometro" translatesAutoresizingMaskIntoConstraints="NO" id="Tn7-uY-Md0">
+                                <rect key="frame" x="131" y="564" width="139" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="RQ7-Rv-iCu"/>
                         <color key="backgroundColor" red="0.98823529480000005" green="0.97254902119999997" blue="0.84313726430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1vl-Sx-RwZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1436" y="-3585"/>
+            <point key="canvasLocation" x="1435.8778625954199" y="-3585.211267605634"/>
         </scene>
         <!--Crisis_Diabetica_view-->
         <scene sceneID="pWv-8c-bDO">
             <objects>
                 <viewController title="Crisis_Diabetica_view" id="jgo-Pr-H1y" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IOd-Ml-4Ql">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Crisis diabetica" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ly-Ue-wSd">
+                                <rect key="frame" x="16" y="57" width="385" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="38"/>
+                                <color key="textColor" red="0.83631234219999995" green="0.50460702899999998" blue="0.44808243260000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8F0-po-A5f">
+                                <rect key="frame" x="52" y="741" width="288" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Llamar a servicios de emergencia">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="glucometro" translatesAutoresizingMaskIntoConstraints="NO" id="wPt-r6-N91">
+                                <rect key="frame" x="139" y="545" width="139" height="179"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="8Op-wX-xfC"/>
                         <color key="backgroundColor" red="0.98823529480000005" green="0.97254902119999997" blue="0.84313726430000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JI4-PU-ETR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="550" y="-3585"/>
+            <point key="canvasLocation" x="548.85496183206101" y="-3585.211267605634"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
@@ -526,6 +628,7 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Hacer Ejercicio" width="200" height="71"/>
+        <image name="baumanometro" width="512" height="512"/>
         <image name="beber agua" width="200" height="71"/>
         <image name="calendar" catalog="system" width="128" height="107"/>
         <image name="crisis anciedad" width="200" height="71"/>
@@ -535,13 +638,19 @@
         <image name="dulce" width="626" height="626"/>
         <image name="flecha" width="90" height="47"/>
         <image name="frutas y verduras" width="200" height="71"/>
+        <image name="glucometro" width="980" height="980"/>
         <image name="note.text.badge.plus" catalog="system" width="128" height="109"/>
+        <image name="panda" width="332" height="411"/>
+        <image name="perrito_gato" width="612" height="408"/>
         <image name="person.circle" catalog="system" width="128" height="123"/>
         <image name="pizarron_pantalla_carga" width="600" height="470"/>
         <image name="suicidio" width="200" height="71"/>
         <image name="waveform.path.ecg.text.rtl" catalog="system" width="101" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="viewFlipsideBackgroundColor">
             <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
